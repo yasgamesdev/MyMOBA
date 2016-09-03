@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC55F8A4-FC2E-4593-BF43-46AAC43E0ADD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyMOBA_Server</RootNamespace>
+    <AssemblyName>MyMOBA Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\..\dev_CSharp\lidgren-network-gen3\Lidgren.Network\bin\Debug\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="SlimMath">
+      <HintPath>..\..\..\dev_CSharp\slimmath\SlimMath\bin\Debug\SlimMath.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="DataType.cs" />
+    <Compile Include="Faction.cs" />
+    <Compile Include="MinionGenerator.cs" />
+    <Compile Include="ObjectManager.cs" />
+    <Compile Include="Objects\Abilities\Ability.cs" />
+    <Compile Include="Objects\Abilities\AbilitySyncData.cs" />
+    <Compile Include="Objects\Abilities\Fireball.cs" />
+    <Compile Include="Objects\Abilities\Fireground.cs" />
+    <Compile Include="Objects\BuffDebuff.cs" />
+    <Compile Include="Objects\Bullet.cs" />
+    <Compile Include="Objects\Core\Core.cs" />
+    <Compile Include="Objects\Core\CoreInitialData.cs" />
+    <Compile Include="Objects\Core\CoreSyncData.cs" />
+    <Compile Include="Objects\EnemyVision.cs" />
+    <Compile Include="Objects\Heroes\ExpPool.cs" />
+    <Compile Include="Objects\Heroes\Hero.cs" />
+    <Compile Include="Objects\Heroes\HeroInitialData.cs" />
+    <Compile Include="Objects\Heroes\HeroSyncData.cs" />
+    <Compile Include="Objects\Heroes\HeroType.cs" />
+    <Compile Include="Objects\Heroes\Item.cs" />
+    <Compile Include="Objects\Heroes\Items.cs" />
+    <Compile Include="Objects\Heroes\Unitychan.cs" />
+    <Compile Include="Objects\HPSyncData.cs" />
+    <Compile Include="Objects\InitialData.cs" />
+    <Compile Include="Objects\Minion\Minion.cs" />
+    <Compile Include="Objects\Minion\MinionSyncData.cs" />
+    <Compile Include="Objects\Monsters\Monster.cs" />
+    <Compile Include="Objects\Monsters\MonsterSyncData.cs" />
+    <Compile Include="Objects\ObjIDGenerator.cs" />
+    <Compile Include="Objects\ServerSideObject.cs" />
+    <Compile Include="Objects\SyncData.cs" />
+    <Compile Include="Objects\Tower\Tower.cs" />
+    <Compile Include="Objects\Tower\TowerInitialData.cs" />
+    <Compile Include="Objects\Tower\TowerSyncData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerMath.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\MyMOBA Server.exe.config
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\MyMOBA Server.exe
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\MyMOBA Server.pdb
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\Lidgren.Network.dll
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\SlimMath.dll
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\UnityEngine.dll
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\Lidgren.Network.pdb
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\Lidgren.Network.xml
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\SlimMath.pdb
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\SlimMath.xml
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\bin\Debug\UnityEngine.xml
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\obj\Debug\MyMOBA Server.csprojResolveAssemblyReference.cache
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\obj\Debug\MyMOBA Server.exe
+C:\Users\Hiro\Documents\dev\MyMOBA Server\MyMOBA Server\obj\Debug\MyMOBA Server.pdb
